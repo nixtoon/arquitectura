@@ -1,0 +1,53 @@
+<ion-card class="card">
+
+  <h1 class="title">Registro</h1>
+  <p class="subtitle">¡Bienvenido al registro de boletas y facturas</p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-label></ion-label>
+          <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+      </ion-col>
+      <ion-col>
+          <ion-label></ion-label>
+          <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-label></ion-label>
+          <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+      </ion-col>
+      <ion-col>
+          <ion-label></ion-label>
+            <ion-select label="Tipo de servicio" placeholder="Seleccionar">
+              <ion-select-option value="apple">Venta de producto</ion-select-option>
+              <ion-select-option value="banana">Revision mecanica</ion-select-option>
+              <ion-select-option value="orange">Importacion</ion-select-option>
+            </ion-select>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-label></ion-label>
+          <ion-checkbox class="rememberMe" labelPlacement="end">Boleta</ion-checkbox> 
+      </ion-col>
+      <ion-col>
+          <ion-label></ion-label>
+          <ion-checkbox class="rememberMe" labelPlacement="end">Factura</ion-checkbox>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button id="open-action-sheet">Opciones</ion-button>
+<ion-action-sheet trigger="open-action-sheet" header="Acciones" [buttons]="actionSheetButtons"></ion-action-sheet>
+
+  
+</ion-card>

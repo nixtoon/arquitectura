@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'registro-admin',
     loadChildren: () => import('./registro-admin/registro-admin.module').then( m => m.RegistroAdminPageModule)
+  },  {
+    path: 'boleta-factura',
+    loadChildren: () => import('./boleta-factura/boleta-factura.module').then( m => m.BoletaFacturaPageModule)
   },
+
 ];
 
 @NgModule({
