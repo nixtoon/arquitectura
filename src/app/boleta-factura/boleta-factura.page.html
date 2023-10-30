@@ -1,53 +1,54 @@
-<ion-card class="card">
+<ion-content>
+  <ion-card class="card">
 
-  <h1 class="title">Registro</h1>
-  <p class="subtitle">¡Bienvenido al registro de boletas y facturas</p>
+    <h1 class="title">Registro</h1>
+    <p class="subtitle">¡Bienvenido al registro de boletas y facturas</p>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-          <ion-label></ion-label>
-          <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
-      </ion-col>
-      <ion-col>
-          <ion-label></ion-label>
-          <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>  
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-label></ion-label>
+            <ion-input class="d-input" label="Nombre y apellidos" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+        </ion-col>
+        <ion-col>
+            <ion-label></ion-label>
+            <ion-input class="d-input" label="ID de compra/reserva" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-          <ion-label></ion-label>
-          <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
-      </ion-col>
-      <ion-col>
-          <ion-label></ion-label>
-            <ion-select label="Tipo de servicio" placeholder="Seleccionar">
-              <ion-select-option value="apple">Venta de producto</ion-select-option>
-              <ion-select-option value="banana">Revision mecanica</ion-select-option>
-              <ion-select-option value="orange">Importacion</ion-select-option>
-            </ion-select>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-label></ion-label>
+            <ion-input class="d-input" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+        </ion-col>
+        <ion-col>
+            <ion-label></ion-label>
+              <ion-select label="Tipo de servicio" placeholder="Seleccionar">
+                <ion-select-option value="apple">Venta de producto</ion-select-option>
+                <ion-select-option value="banana">Revision mecanica</ion-select-option>
+                <ion-select-option value="orange">Importacion</ion-select-option>
+              </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-          <ion-label></ion-label>
-          <ion-checkbox class="rememberMe" labelPlacement="end">Boleta</ion-checkbox> 
-      </ion-col>
-      <ion-col>
-          <ion-label></ion-label>
-          <ion-checkbox class="rememberMe" labelPlacement="end">Factura</ion-checkbox>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-label></ion-label>
+            <ion-checkbox class="rememberMe" labelPlacement="end">Boleta</ion-checkbox> 
+        </ion-col>
+        <ion-col>
+            <ion-label></ion-label>
+            <ion-checkbox class="rememberMe" labelPlacement="end">Factura</ion-checkbox>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-button id="open-action-sheet">Opciones</ion-button>
-<ion-action-sheet trigger="open-action-sheet" header="Acciones" [buttons]="actionSheetButtons"></ion-action-sheet>
+    <ion-button class="action" routerLink="/home" expand="block">Registrar proveedor</ion-button>
 
-  
-</ion-card>
+    
+  </ion-card>
+</ion-content>

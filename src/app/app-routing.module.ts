@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -22,10 +22,25 @@ const routes: Routes = [
   {
     path: 'registro-admin',
     loadChildren: () => import('./registro-admin/registro-admin.module').then( m => m.RegistroAdminPageModule)
-  },  {
+  },
+  {
     path: 'boleta-factura',
     loadChildren: () => import('./boleta-factura/boleta-factura.module').then( m => m.BoletaFacturaPageModule)
   },
+  {
+    path: 'registro-proveedor',
+    loadChildren: () => import('./registro-proveedor/registro-proveedor.module').then( m => m.RegistroProveedorPageModule)
+  },
+  {
+    path: 'home-admin',
+    loadChildren: () => import('./home-admin/home-admin.module').then( m => m.HomeAdminPageModule)
+  },  {
+    path: 'gestion-clientes',
+    loadChildren: () => import('./gestion-clientes/gestion-clientes.module').then( m => m.GestionClientesPageModule)
+  },
+
+
+
 
 ];
 
