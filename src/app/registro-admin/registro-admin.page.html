@@ -1,13 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>registroAdmin</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">registroAdmin</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-card class="card">
+
+      <h1 class="title">Registrate</h1>
+  
+      <p class="subtitle">¡Bienvenido al registro de clientes!</p>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-label></ion-label>
+              <ion-input class="d-input" label="Nombres" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+          </ion-col>
+          <ion-col>
+              <ion-label></ion-label>
+              <ion-input class="d-input" label="Apellidos" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>  
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+      <ion-input class="input" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="Ingresa tú nombre" ></ion-input>
+
+      <ion-button class="action" expand="block" routerLink="/home" >Registrar usuario</ion-button>
+
+    </ion-card>
+
 </ion-content>
