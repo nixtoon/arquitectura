@@ -38,6 +38,30 @@ const routes: Routes = [
     path: 'gestion-clientes',
     loadChildren: () => import('./gestion-clientes/gestion-clientes.module').then( m => m.GestionClientesPageModule)
   },
+  {
+    path: 'gestion-provedoor',
+    loadChildren: () => import('./gestion-provedoor/gestion-provedoor.module').then( m => m.GestionProvedoorPageModule)
+  },
+  {
+    path: 'gestion-empleado',
+    loadChildren: () => import('./gestion-empleado/gestion-empleado.module').then( m => m.GestionEmpleadoPageModule)
+  },
+  {
+    path: 'gestion-servicio',
+    loadChildren: () => import('./gestion-servicio/gestion-servicio.module').then( m => m.GestionServicioPageModule)
+  },
+  {
+    path: 'gestion-producto',
+    loadChildren: () => import('./gestion-producto/gestion-producto.module').then( m => m.GestionProductoPageModule)
+  },
+  {
+    path: 'gestion-pedidos',
+    loadChildren: () => import('./gestion-pedidos/gestion-pedidos.module').then( m => m.GestionPedidosPageModule)
+  },
+  {
+    path: 'gestion-informe',
+    loadChildren: () => import('./gestion-informe/gestion-informe.module').then( m => m.GestionInformePageModule)
+  },
 
 
 
