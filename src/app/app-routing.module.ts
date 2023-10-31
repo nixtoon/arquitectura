@@ -62,6 +62,14 @@ const routes: Routes = [
     path: 'gestion-informe',
     loadChildren: () => import('./gestion-informe/gestion-informe.module').then( m => m.GestionInformePageModule)
   },
+  {
+    path: 'reserva-hora',
+    loadChildren: () => import('./reserva-hora/reserva-hora.module').then( m => m.ReservaHoraPageModule)
+  },
+  {
+    path: 'recepcion-productos',
+    loadChildren: () => import('./recepcion-productos/recepcion-productos.module').then( m => m.RecepcionProductosPageModule)
+  },
 
 
 
