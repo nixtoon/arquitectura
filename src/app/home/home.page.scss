@@ -25,3 +25,23 @@
 #container a {
   text-decoration: none;
 }
+
+.imagen-hero {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.imagen-hero ion-img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.reserva-hora h2 {
+  text-align: center;
+}
+
+.servicios h3 {
+  text-align: center;
+}
