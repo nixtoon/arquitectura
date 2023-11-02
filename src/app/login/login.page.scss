@@ -4,6 +4,7 @@
     margin-left: 20%;
     margin-right: 20%;
     padding: 100px;
+    border-radius: 30px;
 }
 
 .icons{
@@ -40,4 +41,8 @@
 
 .registerUser{
     text-align: center;
+}
+
+ion-input{
+    border-radius: 30px;
 }

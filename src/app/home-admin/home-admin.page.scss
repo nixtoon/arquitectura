@@ -3,3 +3,16 @@ ion-button{
         padding: 20px 30px; /* Aumentar el relleno interno del botón */
         height: 100px; /* Aumentar la altura del botón */
 }
+
+.titulo{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 20px;
+        font-weight: bold;
+}
+
+ion-grid{
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+}
